@@ -1,0 +1,29 @@
+host: 0.0.0.0
+port: 8090
+path: metrics
+metrics:
+# - name: metric_name
+#   description: metric_description
+#   type: gauge, counter, summary, histogram. default: gauge
+#   source: the command that output numberic
+  - name: example_metric_1
+    description: this is a gauge
+    type: gauge
+    source: ls|wc -l
+
+  - name: example_metric_2
+    description: this is a counter
+    type: counter
+    source: echo $RANDOM
+
+  - name: example_metric_3
+    description: this is a summary
+    type: summary
+    source: echo $RANDOM
+
+  - name: example_metric_4
+    description: this is a histogram
+    type: histogram
+    source: echo $RANDOM
+
+
