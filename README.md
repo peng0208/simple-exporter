@@ -5,7 +5,7 @@
     git clone https://github.com/peng0208/simple-exporter
     
 #### build
-    go build
+    go build .
     
 #### run
     ./simple-exporter -c config.yml
